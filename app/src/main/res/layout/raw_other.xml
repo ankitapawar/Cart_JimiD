@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_50sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/raw_chat_other"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="daslhdkjashdk kjshdjkhsajk daslhdkjashdk kjshdjkhsajk jkhsajk jkhsajk jkhsajk jkhsajk jkhsajk" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_80sdp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_8sdp" />
+
+</LinearLayout>

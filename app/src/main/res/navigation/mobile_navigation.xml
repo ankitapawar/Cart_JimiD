@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.bccannco.admin.home.ui.home.HomeFragment"
+        android:label="@string/sales_Dashbord"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_order"
+            app:destination="@id/nav_order" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.bccannco.admin.home.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.bccannco.admin.home.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.bccannco.admin.Orders.OrderFragment"
+        android:label="@string/View_Orders"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_nav_order_to_nav_OrderDetail"
+            app:destination="@id/nav_OrderDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Inventory"
+        android:name="com.bccannco.admin.inventory.InventoryFragment"
+        android:label="@string/menu_Inventory"
+        tools:layout="@layout/fragment_inventory" />
+
+    <fragment
+        android:id="@+id/nav_Chats"
+        android:name="com.bccannco.admin.chats.ChatListFragment"
+        android:label="@string/menu_chats"
+        tools:layout="@layout/fragment_chat_list">
+        <action
+            android:id="@+id/action_nav_Chats_to_nav_personalChat"
+            app:destination="@id/nav_personalChat" />
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_personalChat"
+        android:name="com.bccannco.admin.chats.personalChat.PersonalChatActivity"
+        tools:layout="@layout/activity_personal_chat" />
+
+    <fragment
+        android:id="@+id/nav_Newsletter"
+        android:name="com.bccannco.admin.newsletter.NewsletterFragment"
+        android:label="@string/menu_newsletter"
+        tools:layout="@layout/fragment_newsletter" />
+
+    <activity
+        android:id="@+id/nav_OrderDetail"
+        android:name="com.bccannco.admin.Orders.OrderDetail.OrderDetailsActivity"
+        android:label="@string/menu_order_detail"
+        tools:layout="@layout/activity_order_details" />
+
+</navigation>
